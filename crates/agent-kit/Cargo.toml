@@ -1,0 +1,18 @@
+[package]
+name = "agent-kit"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "agent-kit server binary"
+
+[dependencies]
+agent-kit-actions = { path = "../agent-kit-actions" }
+agent-kit-api = { path = "../agent-kit-api" }
+agent-kit-blob = { path = "../agent-kit-blob" }
+agent-kit-core = { path = "../agent-kit-core" }
+agent-kit-db = { path = "../agent-kit-db" }
+agent-kit-mcp = { path = "../agent-kit-mcp" }
+axum = "0.8"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "signal"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

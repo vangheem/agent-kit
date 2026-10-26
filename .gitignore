@@ -1,0 +1,8 @@
+target/
+node_modules/
+dist/
+.env
+.env.compose.local
+blobs/
+var/lib/agent-kit/
+.DS_Store

@@ -1,0 +1,16 @@
+[package]
+name = "agent-kit-blob"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+agent-kit-core = { path = "../agent-kit-core" }
+async-trait = "0.1"
+chrono = { version = "0.4", default-features = false, features = ["std"] }
+sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio", "postgres", "uuid", "chrono"] }
+tokio = { version = "1", features = ["fs"] }
+uuid = { version = "1", features = ["v4"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }

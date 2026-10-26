@@ -1,0 +1,12 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/agent-kit",
+    "crates/agent-kit-core",
+    "crates/agent-kit-db",
+    "crates/agent-kit-blob",
+    "crates/agent-kit-api",
+    "crates/agent-kit-mcp",
+    "crates/agent-kit-actions",
+]
+default-members = ["crates/agent-kit"]

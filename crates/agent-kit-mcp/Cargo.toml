@@ -1,0 +1,15 @@
+[package]
+name = "agent-kit-mcp"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+agent-kit-core = { path = "../agent-kit-core" }
+agent-kit-db = { path = "../agent-kit-db" }
+axum = "0.8"
+rmcp = { version = "=3.4.1", features = ["server", "macros", "transport-streamable-http-server"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+uuid = "1"
